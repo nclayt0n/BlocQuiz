@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css" href="index.html">
+    <title>Anatomy Quiz Questions</title>
+</head>
+
+<body>
+    <header role="banner">
+        <div class="logo">
+            <a href="index.html"><img src="https://www.misskatecuttables.com/uploads/shopping_cart/9407/large_dancing-skeleton.png" alt="cute large_dancing-skeleton"></a>
+        </div>
+        <ul class='count'>
+            <li class="count Question">Questions:0/10</li>
+            <li class="count Score"> Score:0</li>
+        </ul>
+    </header>
+    <main class="QandAMainDiv">
+        <div class="QandAForm">
+            <fieldset>
+                <legend class="question">${STORE[0].Question}</legend>
+                <form class='questionForm' action="server endpoint" method="post">
+                    <input type="button" value="${STORE[0].Answers[0]}" class="answerButton 0"><br>
+                    <input type="button" value="${STORE[0].Answers[1]}" class="answerButton 1"><br>
+                    <input type="button" value="${STORE[0].Answers[2]}" class="answerButton 2"><br>
+                    <input type="button" value="${STORE[0].Answers[3]}" class="answerButton 3"><br>
+                    <input class="submitButton" type="button" value='Submit'></input>
+                </form>
+            </fieldset>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="datastore.js"></script>
+</body>
+
+</html>

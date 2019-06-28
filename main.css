@@ -31,7 +31,7 @@ h1 {
     background-color: lightgrey;
 }
 
-.container {
+.startContainer {
     background-color: lightgrey;
     display: block;
     text-align: center;
@@ -39,12 +39,35 @@ h1 {
     margin: 10px;
 }
 
-button {
+.start {
     text-align: center;
 }
 
+
+/*Questions html page*/
+
 .QandAForm {
-    background: rgba(187, 176, 176, 0.849);
-    display: flex;
-    justify-content: center;
+    /* div with question and answers*/
+    background: rgba(155, 0, 0, 0.849);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+.submitButton,
+.answerButton {
+    width: 200px;
+}
+
+.finalScore {
+    background: rgba(155, 0, 0, 0.849);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
 }
