@@ -1,0 +1,101 @@
+Project Requirements
+While you're building your quiz app, you'll need to keep in mind what your app must do and how it should be built.
+
+User experience requirements
+The following requirements cover what the app must do, from the user's perspective.
+
+The starting screen should have a button that users can click to start the quiz.
+Users should be prompted through a series of at least 5 multiple choice questions that they can answer.
+Users should be asked questions 1 after the other.
+Users should only be prompted with 1 question at a time.
+Users should not be able to skip questions.
+Users should also be able to see which question they're on (for instance, "7 out of 10") and their current score ("5 correct, 2 incorrect").
+Upon submitting an answer, users should:
+receive textual feedback about their answer. If they were incorrect, they should be told the correct answer.
+be moved onto the next question (or interact with an element to move on).
+Users should be shown their overall score at the end of the quiz. In other words, how many questions they got right out of the total questions asked.
+Users should be able to start a new quiz.
+Technical requirements
+Your quiz app must:
+
+Render answer choices in a <form>.
+Use semantic HTML, along with CSS and jQuery.
+Follow a11y best practices.
+Refer back to the checkpoints on accessibility and forms for help.
+Use responsive design.
+Be fully usable by keyboard (which will be easy enough if you start with a form).
+
+||
+
+Questions:
+1.) Where is the humerus bone?
+    -In your lower leg?
+    -In your upper arm?
+    -In your lower arm?
+    -In your upper leg?
+    A: The humerous bone is located in your upper arm, it is connected at the glenohumeral joint.
+https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Humerus_-_anterior_view.png/1200px-Humerus_-_anterior_view.png
+
+2.) Where are your metatarsels?
+    -In your hand?
+    -In your arm?
+    -In your leg?
+    -In your foot?
+    A: Metatarsels are the long bones, located inbetween your ankle and your toes.
+    http://www.orthopaedia.com/media/2018/8/5ff20309-9275-4806-8903-0d10b41a3ecd-1533248194197.png
+3.)What is the anatomical name for shoulder blade?
+    -Clavicle
+    -Scaphoid
+    -Sternum
+    -Scapula
+A: Scapula is also referred to as the wingbone.
+  https://web.duke.edu/anatomy/siteParts/LWW_atlas_labeled/Plate-2-03B.jpg
+4.) Where is your femur?
+    -In your lower leg?
+    -In your upper arm?
+    -In your lower arm?
+    -In your upper leg?
+A: The femur is located in your upper leg and is one of the strongest bones.
+http://www.innerbody.com/assets/Femur%20(1).png
+5.)Where is your mandible located?
+    -In your face?
+    -In your chest?
+    -In your back?
+    -In your foot?
+A:The manidble is the lowest bone of the face, also referred to as your jaw.
+https://www.innerbody.com/assets/Mandible.png
+6.) What is a fossa?
+    -Remains of prehistoric organism preserved in rock.
+    -Shallow depression.
+    -Collagen
+    -Fascia
+A: The cubital fossa is on the opposite the elbow.
+    https://s3.amazonaws.com/classconnection/487/flashcards/12299487/jpg/fossa-156BB93FE5749337EF4-thumb400.jpg
+7.) Where is the IT band located?
+    -At the Apple Bar
+    -In the lower leg
+    -In the upper leg
+    -In the ankle
+A: The IlioTibial band is located on the side of the upper leg, from the hip down to the knee. 
+https://squatuniversitydotcom.files.wordpress.com/2017/05/it-band.png?w=870
+8.) Which is part of the heart?
+    -Olfactory Area
+    -Wernicke's Area
+    -Aorta
+    -Duodenum
+A: The Aorta is the largest artery in the body.
+https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Aorta_scheme_noTags.svg/1200px-Aorta_scheme_noTags.svg.png
+9.)What are the bones of the spine called?
+    -Metatarsels
+    -Metacarpels
+    -Vertebraes
+    -Vessels
+A: There are 33 Vertebraes in the human body.
+http://images.huffingtonpost.com/2013-10-17-AnatBanielMethodSpine.jpg
+10.) How many days does it take a person's skin to completely replace itself?
+    -7 days
+    -14 days
+    -27 days
+    -34 days
+A: The external layer of skin is called the epidermis and replaces itself approximately every 27 days.
+https://livelovefruit.com/wp-content/uploads/2015/08/Howbodyrebuilds.jpg
