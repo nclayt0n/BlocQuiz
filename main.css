@@ -71,3 +71,22 @@ fieldset {
     padding: 10px;
     margin: 10px;
 }
+
+
+/*correct answer page*/
+
+.displayCorrectAnswer {
+    background: rgba(155, 0, 0, 0.849);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.correctanswerimage {
+    height: 100px;
+}
+
+.nextQuestion {
+    width: 200px;
+}
