@@ -1,12 +1,29 @@
 * {
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('http://eskipaper.com/images/hd-background-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    /*this is the main container on every page- centered*/
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
 }
 
 
 /*header stylings*/
 
 .logo {
-    background-color: gray;
+    background-color: rgba(153, 148, 148, 0.952);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -18,21 +35,18 @@ img {
 }
 
 .count {
-    background-color: lightgray;
+    background-color: rgba(247, 247, 247, 0.863);
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    margin-top: 0;
 }
 
 
 /*start page stylings*/
 
-h1 {
-    background-color: lightgrey;
-}
-
 .startContainer {
-    background-color: lightgrey;
+    background-color: rgba(155, 0, 0, 0.849);
     display: block;
     text-align: center;
     padding: 10px;
@@ -64,12 +78,24 @@ fieldset {
     width: 200px;
 }
 
+.finalScoreButton {
+    width: 200px;
+    display: none;
+}
+
+
+/*final score page*/
+
 .finalScore {
     background: rgba(155, 0, 0, 0.849);
-    display: block;
-    text-align: center;
     padding: 10px;
+    margin: 20px;
+}
+
+.div {
+    background: rgba(247, 247, 247, 0.863);
     margin: 10px;
+    text-align: center;
 }
 
 
