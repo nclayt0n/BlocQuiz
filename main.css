@@ -48,7 +48,7 @@ img {
 
 .startContainer {
     background-color: rgba(155, 0, 0, 0.849);
-    display: block;
+    display: flex;
     text-align: center;
     padding: 20px;
     margin: 30px;
