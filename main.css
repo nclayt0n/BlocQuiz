@@ -17,7 +17,7 @@ body {
 /*header stylings*/
 
 h1 {
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .logo {
@@ -49,6 +49,7 @@ img {
 .startContainer {
     background-color: rgba(155, 0, 0, 0.849);
     display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 20px;
     margin: 30px;
