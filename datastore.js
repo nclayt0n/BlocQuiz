@@ -31,5 +31,46 @@ const STORE = [{
         correctAnswer: 'Vertebraes',
         answerFact: 'There are 33 Vertebraes in the human body.',
         icon: { src: 'http://www.yogasya.in/Images/Rites/spine.JPG', alt: 'spine vertebraes' }
+    },
+    {
+        question: 'Where is your mandible located?',
+        asnwers: ['In your face', 'In your chest', 'In your back', 'In your foot'],
+        correctAnswer: 'In your face',
+        answerFact: 'The manidble is the lowest bone of the face, also referred to as your jaw.',
+        icon: {
+            src: 'https://www.innerbody.com/assets/Mandible.png',
+            alt: 'jawbone'
+        }
+    }, {
+        question: 'What is a fossa?',
+        answers: ['Remains of prehistoric organism preserved in rock',
+            'Shallow depression', 'Collagen', 'Fascia'
+        ],
+        correctAnswer: 'Shallow depression',
+        answerFact: 'The cubital fossa is an example of a shallow depression.',
+        icon: { src: 'https://s3.amazonaws.com/classconnection/382/flashcards/794382/jpg/200761210359-14FA4C1BFCD2687E6BF.jpg', alt: 'fossa' }
+    },
+    {
+        question: 'Which is part of the heart?',
+        answers: ['Olfactory Area',
+            'Wernickes Area', 'Aorta', 'Duodenum'
+        ],
+        correctAnswer: 'Aorta',
+        answerFact: 'The Aorta is the largest artery in the body.',
+        icon: { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Aorta_scheme_noTags.svg/1200px-Aorta_scheme_noTags.svg.png', alt: 'aorta' }
+    },
+    {
+        question: 'How many days does it take a person\'\s skin to completely replace itself?',
+        answers: ['7 days', '14 days', '27 days', '34 days'],
+        correctAnswer: '27 days',
+        answerFact: 'The external layer of skin is called the epidermis and replaces itself approximately every 27 days.',
+        icon: { src: 'https://livelovefruit.com/wp-content/uploads/2015/08/Howbodyrebuilds.jpg', alt: 'how your body rebuilds over time' }
+    },
+    {
+        question: 'Where are your metatarsels?',
+        answers: ['In your hand', 'In your arm', 'In your leg', 'In your foot'],
+        correctAnswer: 'In your foot',
+        answerFact: 'Metatarsels are the long bones, located inbetween your ankle and your toes.',
+        icon: { src: 'http://www.orthopaedia.com/media/2018/8/5ff20309-9275-4806-8903-0d10b41a3ecd-1533248194197.png', alt: 'metatarsel bones' }
     }
 ];
