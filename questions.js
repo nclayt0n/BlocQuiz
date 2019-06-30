@@ -50,10 +50,10 @@ function displayQuestion() {
     $('.answerButton').each((index, element) => { element.checked = false; });
     let index = questionNumber - 1;
     $('#question').text(STORE[index].question);
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < (STORE.length - 1); i++) {
         $(`#option${i}`).val(STORE[index].answers[i]);
     }
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < (STORE.length - 1); i++) {
         $(`#selected${i}`).text(STORE[index].answers[i]);
     }
 }
