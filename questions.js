@@ -35,8 +35,10 @@ function submitQuestion() {
         let index = questionNumber - 1;
         if (choosenAnswer === STORE[index].correctAnswer) {
             score++;
+            $('#answerInfo').text(`You are correct. ${STORE[index].answerFact}`)
+        } else {
+            $('#answerInfo').text(`I'm sorry, that was incorrect. ${STORE[index].answerFact}`);
         }
-        $('#answerInfo').text(STORE[index].answerFact);
         $('#answerInfoImg').attr('src', STORE[index].icon.src).attr('alt', STORE[index].icon.alt).addClass('factImg');
         updateCurrentQuestionCount();
         $('#QandAForm').hide();

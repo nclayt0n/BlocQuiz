@@ -54,7 +54,7 @@ img {
     padding: 20px;
     margin: 30px;
     text-shadow: 1px 1px rgba(83, 66, 66, 0.952);
-    width: fit-content;
+    align-items: center;
 }
 
 .start {
