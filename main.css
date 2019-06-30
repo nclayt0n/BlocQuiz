@@ -166,12 +166,8 @@ fieldset {
     margin: 10px;
 }
 
-.correctanswerimage {
-    height: 100px;
-}
-
 .factImg {
-    height: 200px;
+    height: 175px;
 }
 
 #nextQuestion {
