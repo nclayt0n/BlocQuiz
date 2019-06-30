@@ -15,28 +15,40 @@
             <a href="index.html"><img src="https://www.misskatecuttables.com/uploads/shopping_cart/9407/large_dancing-skeleton.png" alt="cute large_dancing-skeleton"></a>
         </div>
         <ul class='count'>
-            <li class="count Question">Questions:0/10</li>
-            <li class="count Score"> Score:0</li>
+            <li class="count">Questions:<span id='currentQuestion'>0</span>/<span id='totalQuestions'>5</span></li>
+            <li class="count Score"> Score:<span id='currentScore'>0</li>
         </ul>
     </header>
     <main class="QandAMainDiv">
-        <div class="QandAForm">
-            <fieldset>
-                <legend class="question">${STORE[0].Question[0]}</legend>
-                <form class='questionForm' action="server endpoint" method="post">
-                    <input type="button" value="${STORE[0].Answers[0]}" class="answerButton 0"><br>
-                    <input type="button" value="${STORE[0].Answers[1]}" class="answerButton 1"><br>
-                    <input type="button" value="${STORE[0].Answers[2]}" class="answerButton 2"><br>
-                    <input type="button" value="${STORE[0].Answers[3]}" class="answerButton 3"><br>
-                    <a href="correctAnswer.html"><input class="submitButton" type="button" value='Submit'></a>
-                    </input>
-                    <br> click the submit button to go to the correctAnswer page.
+        <section class="QandAForm" id="QandAForm">
+            <fieldset class="generate">
+                <legend class="question" id="question">${STORE[0].question}</legend>
+                <div id="formContainer">
+                    <form class='questionForm' id="questionForm "action="server endpoint" method="post">
+                        <label for="questionInputs" class="questionInputContainer">
+                        <input name="answerButton" type="radio" value="${STORE[0].Answers[0]}" class="answerButton" id="option0"><span id="selected0"></span><br />
+                <input name="answerButton" type="radio" value="STORE[index].answers[i]" class="answerButton" id="option1" /><span id="selected1"></span><br />
+                <input name="answerButton" type="radio" value="${STORE[0].Answers[2]}" class="answerButton" id="option2" /><span id="selected2"></span><br />
+                <input name="answerButton" type="radio" value="${STORE[0].Answers[3]}" class="answerButton" id="option3" /><span id="selected3"></span><br />
+                <input class="submitButton" id="submitAnswer" type="button" value='Submit' /></label>
                 </form>
-            </fieldset>
-        </div>
-    </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="datastore.js"></script>
+                </div>
+                </fieldset>
+                </section>
+                <section class="displayCorrectAnswer" id="correctAnswer">
+                    <div for="correctAnswerContainer" class="correctAnswerContainer">
+                        <div class=displayAnswer id="answerInfo">The humerous bone is located in your upper arm, it is connected at the glenohumeral joint.</div>
+                        <div><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Humerus_-_anterior_view.png/1200px-Humerus_-_anterior_view.png' alt='humerus bone' id="answerInfoImg"></div>
+                        <input type="button" value="Next" id='nextQuestion'><br>
+                    </div>
+                </section>
+                <section for="finalScore" class='finalScore' id="finalScore">
+                    <div id="finalScoreCount">here is where the final count will be. click the skeleton to start a new quiz.</div>
+                </section>
+                </main>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="datastore.js"></script>
+                <script src="questions.js"></script>
 </body>
 
 </html>

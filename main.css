@@ -2,25 +2,23 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
+    color: rgb(12, 11, 11);
+    border-radius: 8px;
 }
 
 body {
-    background-image: url('http://eskipaper.com/images/hd-background-2.jpg');
+    background-image: url('http://images.freecreatives.com/wp-content/uploads/2016/02/White-Glitter-Wallpaper-.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-main {
-    /*this is the main container on every page- centered*/
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    padding: 20px;
-}
-
 
 /*header stylings*/
+
+h1 {
+    font-size: 45px;
+}
 
 .logo {
     background-color: rgba(153, 148, 148, 0.952);
@@ -40,6 +38,9 @@ img {
     display: flex;
     justify-content: space-around;
     margin-top: 0;
+    font-weight: bold;
+    text-shadow: .5px .5px rgba(153, 148, 148, 0.952);
+    color: rgba(83, 66, 66, 0.952);
 }
 
 
@@ -49,20 +50,34 @@ img {
     background-color: rgba(155, 0, 0, 0.849);
     display: block;
     text-align: center;
-    padding: 10px;
-    margin: 10px;
+    padding: 20px;
+    margin: 30px;
+    text-shadow: 1px 1px rgba(83, 66, 66, 0.952);
 }
 
 .start {
     text-align: center;
+    width: 200px;
+    background-color: rgba(153, 148, 148, 0.952);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(133, 10, 10, 0.925);
+    padding: 5px;
 }
 
 
-/*Questions html page*/
+/*Questions*/
+
+.question {
+    font-weight: bold;
+    padding: 5px;
+    font-size: 22px;
+}
 
 .QandAForm {
     /* div with question and answers*/
-    background: rgba(155, 0, 0, 0.849);
+    background-color: rgba(155, 0, 0, 0.849);
     display: block;
     text-align: center;
     padding: 10px;
@@ -70,17 +85,49 @@ img {
 }
 
 fieldset {
+    justify-content: center;
+    display: flex;
     border: none;
 }
 
-.submitButton,
-.answerButton {
-    width: 200px;
+.submitButton {
+    width: 50%;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(133, 10, 10, 0.925);
+    margin: 10px;
+    background-color: rgba(153, 148, 148, 0.952);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
 }
 
-.finalScoreButton {
-    width: 200px;
-    display: none;
+#selected0,
+#selected1,
+#selected2,
+#selected3 {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+#formContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.answerButton {
+    float: left;
+}
+
+.answersContainer {
+    border: none;
+}
+
+.questionForm {
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
 }
 
 
@@ -92,10 +139,18 @@ fieldset {
     margin: 20px;
 }
 
-.div {
-    background: rgba(247, 247, 247, 0.863);
-    margin: 10px;
+#finalScoreCount {
+    /*background: rgba(247, 247, 247, 0.863);*/
+    margin: 30px;
+    padding: 20px;
     text-align: center;
+}
+
+#finalScore {
+    font-size: 22px;
+    display: flex;
+    font-weight: bold;
+    text-shadow: .5px .5px rgba(83, 66, 66, 0.952);
 }
 
 
@@ -113,6 +168,42 @@ fieldset {
     height: 100px;
 }
 
-.nextQuestion {
-    width: 200px;
+.factImg {
+    height: 350px;
+}
+
+#nextQuestion {
+    width: 25%;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(133, 10, 10, 0.925);
+    margin: 10px;
+    background-color: rgba(153, 148, 148, 0.952);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.displayAnswer {
+    font-weight: bold;
+    padding: 5px;
+    font-size: 22px;
+}
+
+.correctAnswerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/*hide correct answer & finalscore page*/
+
+#finalScore {
+    display: none;
+}
+
+#correctAnswer {
+    display: none;
 }
