@@ -36,7 +36,7 @@ const STORE = [{
         question: 'Where is your mandible located?',
         answers: ['In your face', 'In your chest', 'In your back', 'In your foot'],
         correctAnswer: 'In your face',
-        answerFact: 'The manidble is the lowest bone of the face, also referred to as your jaw.',
+        answerFact: 'The mandible is the lowest bone of the face, also referred to as your jaw.',
         icon: {
             src: 'https://www.innerbody.com/assets/Mandible.png',
             alt: 'jawbone'

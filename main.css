@@ -111,11 +111,13 @@ fieldset {
     line-height: 28px;
     margin: 5px;
     font-weight: bold;
+    text-align: left;
 }
 
 #formContainer {
     display: flex;
     justify-content: center;
+    margin: 5px;
 }
 
 .answerButton {
@@ -155,6 +157,12 @@ fieldset {
     text-shadow: .5px .5px rgba(83, 66, 66, 0.952);
 }
 
+#finalDec {
+    font-size: 26px;
+    text-shadow: .5px .5px rgba(223, 214, 214, 0.952);
+    text-decoration: underline;
+}
+
 
 /*correct answer page*/
 
@@ -164,6 +172,18 @@ fieldset {
     text-align: center;
     padding: 10px;
     margin: 10px;
+}
+
+#textDecWrong {
+    color: white;
+    text-decoration: underline;
+    text-shadow: 2px 2px rgb(124, 1, 1);
+}
+
+#textDecRight {
+    color: white;
+    text-decoration: underline;
+    text-shadow: 1px 1px rgb(26, 124, 1);
 }
 
 .factImg {

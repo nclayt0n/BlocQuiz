@@ -26,10 +26,10 @@
                 <div id="formContainer">
                     <form class='questionForm' id="questionForm "action="server endpoint" method="post">
                         <label for="questionInputs" class="questionInputContainer">
-                        <input name="answerButton" type="radio" value="${STORE[0].Answers[0]}" class="answerButton" id="option0"><span id="selected0"></span><br />
-                <input name="answerButton" type="radio" value="STORE[index].answers[i]" class="answerButton" id="option1" /><span id="selected1"></span><br />
-                <input name="answerButton" type="radio" value="${STORE[0].Answers[2]}" class="answerButton" id="option2" /><span id="selected2"></span><br />
-                <input name="answerButton" type="radio" value="${STORE[0].Answers[3]}" class="answerButton" id="option3" /><span id="selected3"></span><br />
+                        <input name="answerButton" type="radio" value="${STORE[0].Answers[0]}" class="answerButton" id="option0"><label for="option0" id="selected0"></label><br />
+                <input name="answerButton" type="radio" value="STORE[index].answers[i]" class="answerButton" id="option1" /><label id="selected1" for="option1"></label ><br />
+                <input name="answerButton" type="radio" value="${STORE[0].Answers[2]}" class="answerButton" id="option2" /><label id="selected2"for="option2"></label ><br />
+                <input name="answerButton" type="radio" value="${STORE[0].Answers[3]}" class="answerButton" id="option3" /><label id="selected3" for="option3"></label ><br />
                 <input class="submitButton" id="submitAnswer" type="button" value='Submit' /></label>
                 </form>
                 </div>
@@ -37,7 +37,7 @@
                 </section>
                 <section class="displayCorrectAnswer" id="correctAnswer">
                     <div for="correctAnswerContainer" class="correctAnswerContainer">
-                        <div class=displayAnswer id="answerInfo">The humerous bone is located in your upper arm, it is connected at the glenohumeral joint.</div>
+                        <div class="displayAnswer" id="answerInfo">The humerous bone is located in your upper arm, it is connected at the glenohumeral joint.</div>
                         <div><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Humerus_-_anterior_view.png/1200px-Humerus_-_anterior_view.png' alt='humerus bone' id="answerInfoImg"></div>
                         <input type="button" value="Next" id='nextQuestion'><br>
                     </div>

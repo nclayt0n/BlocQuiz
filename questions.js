@@ -5,15 +5,12 @@ let choosenAnswer;
 function selectedAnswer() {
     $('.answerButton').on('click', event => {
         choosenAnswer = ($(event.target).attr('value'));
-        console.log(choosenAnswer);
-        //need to be able to choose and then do this on submit
     })
 }
 
 
 function ontoNextQuestion() {
     $('#nextQuestion').on('click', event => {
-        //$('.answerButton').removeAttr('checked');
         questionNumber++;
         // questionNumber = Math.min(questionNumber, STORE.length);
         // //this is temporary. eventually end of questions go to final score. 
@@ -29,20 +26,37 @@ function ontoNextQuestion() {
     })
 }
 
+function checkselectedAnswer() {
+    let result = false;
+    $('.answerButton').each((index, element) => {
+        if (element.checked === true) result = true;
+    });
+    // }
+    return result;
+}
+
 function submitQuestion() {
+    //if all input attr checked = false(means none are selected) then do not continue to the submit click event alert to select and answer  
+
     $('#submitAnswer').on('click', event => {
-        //$('.answerButton').removeAttr('checked');
-        let index = questionNumber - 1;
-        if (choosenAnswer === STORE[index].correctAnswer) {
-            score++;
-            $('#answerInfo').text(`You are correct. ${STORE[index].answerFact}`)
+        if (checkselectedAnswer()) {
+            let index = questionNumber - 1;
+            console.log(choosenAnswer);
+            console.log(STORE[index].correctAnswer);
+            if (choosenAnswer === STORE[index].correctAnswer) {
+                score++;
+                $('#answerInfo').html(`<div class="displayAnswer" id="answerInfo">You are <span id="textDecRight">correct</span>. ${STORE[index].answerFact}</div>`)
+            } else {
+                $('#answerInfo').html(`<div class="displayAnswer" id="answerInfo"> I'm sorry, that was <span id="textDecWrong">incorrect</span>. ${STORE[index].answerFact}</div>`);
+            }
+            $('#answerInfoImg').attr('src', STORE[index].icon.src).attr('alt', STORE[index].icon.alt).addClass('factImg');
+            updateCurrentQuestionCount();
+            $('#QandAForm').hide();
+            $('#correctAnswer').show();
         } else {
-            $('#answerInfo').text(`I'm sorry, that was incorrect. ${STORE[index].answerFact}`);
+            alert('You must select an answer');
+
         }
-        $('#answerInfoImg').attr('src', STORE[index].icon.src).attr('alt', STORE[index].icon.alt).addClass('factImg');
-        updateCurrentQuestionCount();
-        $('#QandAForm').hide();
-        $('#correctAnswer').show();
     })
 }
 
@@ -61,9 +75,10 @@ function displayQuestion() {
 function updateCurrentQuestionCount() {
     $('#currentQuestion').text(questionNumber);
     $('#currentScore').text(score);
-    $('#finalScore').html(`<div id="finalScoreCount">Hope you enjoyed this Anatomy Quiz, and learned a lot!!<br>You scored ${score} points.<br> Click the skeleton to begin again.</div>`);
+    $('#finalScore').html(`<div id="finalScoreCount">Hope you enjoyed this Anatomy Quiz, and learned a lot!!<br>You scored <span id="finalDec">${score}</span> points.<br> Click the skeleton to begin again.</div>`);
     $('#totalQuestions').text(STORE.length);
 }
+
 
 function createQuiz() {
     updateCurrentQuestionCount();
@@ -71,6 +86,7 @@ function createQuiz() {
     submitQuestion();
     ontoNextQuestion();
     selectedAnswer();
-    finalScoreHtml()
+
 }
+
 $(createQuiz);

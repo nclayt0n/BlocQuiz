@@ -25,6 +25,11 @@ Refer back to the checkpoints on accessibility and forms for help.
 Use responsive design.
 Be fully usable by keyboard (which will be easy enough if you start with a form).
 
+
+- need to not skip, shouldn't be able to submit to next question without selecting an answer
+- emphasis correct/incorrect.
+- space before/between numbers (score/question)
+-quesiton alignment
 ||
 
 Questions:
