@@ -160,6 +160,7 @@ fieldset {
 
 #finalDec {
     font-size: 26px;
+    color: white;
     text-shadow: .5px .5px rgba(223, 214, 214, 0.952);
     text-decoration: underline;
 }
