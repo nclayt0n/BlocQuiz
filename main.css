@@ -41,6 +41,7 @@ img {
     font-weight: bold;
     text-shadow: .5px .5px rgba(153, 148, 148, 0.952);
     color: rgba(83, 66, 66, 0.952);
+    padding: 2px;
 }
 
 

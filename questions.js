@@ -13,7 +13,6 @@ function ontoNextQuestion() {
     $('#nextQuestion').on('click', event => {
         questionNumber++;
         // questionNumber = Math.min(questionNumber, STORE.length);
-        // //this is temporary. eventually end of questions go to final score. 
         if (questionNumber <= STORE.length) {
             updateCurrentQuestionCount();
             displayQuestion();
@@ -36,8 +35,6 @@ function checkselectedAnswer() {
 }
 
 function submitQuestion() {
-    //if all input attr checked = false(means none are selected) then do not continue to the submit click event alert to select and answer  
-
     $('#submitAnswer').on('click', event => {
         if (checkselectedAnswer()) {
             let index = questionNumber - 1;
