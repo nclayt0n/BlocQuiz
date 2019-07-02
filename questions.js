@@ -45,9 +45,9 @@ function submitQuestion() {
             console.log(STORE[index].correctAnswer);
             if (choosenAnswer === STORE[index].correctAnswer) {
                 score++;
-                $('#answerInfo').html(`<div class="displayAnswer" id="answerInfo">You are <span id="textDecRight">correct</span>. ${STORE[index].answerFact}</div>`)
+                $('#answerInfo').html(`<div class="displayAnswer" id="answerInfo">You are <span id="textDecRight">correct</span>.<br> ${STORE[index].answerFact}</div>`)
             } else {
-                $('#answerInfo').html(`<div class="displayAnswer" id="answerInfo"> I'm sorry, that was <span id="textDecWrong">incorrect</span>. ${STORE[index].answerFact}</div>`);
+                $('#answerInfo').html(`<div class="displayAnswer" id="answerInfo"> I'm sorry, that was <span id="textDecWrong">incorrect</span>.<br> ${STORE[index].answerFact}</div>`);
             }
             $('#answerInfoImg').attr('src', STORE[index].icon.src).attr('alt', STORE[index].icon.alt).addClass('factImg');
             updateCurrentQuestionCount();
