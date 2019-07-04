@@ -129,6 +129,7 @@ fieldset {
 .answerButton {
     float: left;
     cursor: pointer;
+    font-size: 22px;
 }
 
 .answersContainer {
