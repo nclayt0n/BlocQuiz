@@ -4,6 +4,11 @@
     text-decoration: none;
     color: rgb(12, 11, 11);
     border-radius: 8px;
+    letter-spacing: 1px;
+}
+
+:root {
+    --color: rgba(236, 27, 27, 0.705);
 }
 
 body {
@@ -48,7 +53,7 @@ img {
 /*start page stylings*/
 
 .startContainer {
-    background-color: rgba(155, 0, 0, 0.849);
+    background-color: var(--color);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -82,7 +87,7 @@ img {
 
 .QandAForm {
     /* div with question and answers*/
-    background-color: rgba(155, 0, 0, 0.849);
+    background-color: var(--color);
     display: block;
     text-align: left;
     padding: 10px;
@@ -99,12 +104,11 @@ fieldset {
     width: 60%;
     border: none;
     box-shadow: 0 8px 16px 0 rgba(133, 10, 10, 0.925);
-    margin: 10px;
+    margin: 10px 10px 10px 50px;
     background-color: rgba(153, 148, 148, 0.952);
     font-weight: bold;
     font-size: 14px;
     padding: 5px;
-    margin-left: 35px;
     cursor: pointer;
 }
 
@@ -146,7 +150,7 @@ fieldset {
 /*final score page*/
 
 .finalScore {
-    background: rgba(155, 0, 0, 0.849);
+    background: var(--color);
     padding: 10px;
     margin: 20px;
 }
@@ -156,6 +160,8 @@ fieldset {
     margin: 30px;
     padding: 20px;
     text-align: center;
+    line-height: 34px;
+    letter-spacing: 1px;
 }
 
 #finalScore {
@@ -176,7 +182,7 @@ fieldset {
 /*correct answer page*/
 
 .displayCorrectAnswer {
-    background: rgba(155, 0, 0, 0.849);
+    background: var(--color);
     display: block;
     text-align: center;
     padding: 10px;
